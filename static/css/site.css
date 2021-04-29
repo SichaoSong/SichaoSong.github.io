@@ -329,11 +329,19 @@ a {
 }
 
 .icon.facebook {
-    background-image: url(../img/icon-facebook.png)
+    background-image: url(../img/icon-facebook-1.png)
 }
 
 .icon.facebook:after {
-    content: "Instagram"
+    content: "Facebook"
+}
+
+.icon.email {
+    background-image: url(../img/icon-email.png)
+}
+
+.icon.email:after {
+    content: "Email"
 }
 
 .icon.behance {
