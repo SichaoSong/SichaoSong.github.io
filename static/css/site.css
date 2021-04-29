@@ -732,3 +732,15 @@ header.main nav a.active {
    margin-left: 25px;
     width: 30%;
 }
+
+#slide-1 {
+    background-image: url(../img/icon-facebook-1.png);
+    width: 600px;
+    height: 600px;
+}
+
+#slide-2 {
+    background-image: url(../img/icon-facebook-1.png);
+    width: 600px;
+    height: 600px;
+}
