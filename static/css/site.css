@@ -733,12 +733,17 @@ header.main nav a.active {
     width: 30%;
 }
 
+#slides {
+    width: 80%;
+    height: 80%;
+}
+
 #slide-1 {
-    width: 600px;
-    height: 600px;
+    width: 80%;
+    height: 80%;
 }
 
 #slide-2 {
-    width: 600px;
-    height: 600px;
+    width: 80%;
+    height: 80%;
 }
