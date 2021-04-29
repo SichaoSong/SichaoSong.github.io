@@ -510,7 +510,7 @@ body {
     background-image: url(../img/profile.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     width: 70%;
     height: 100%;
     position: absolute;
