@@ -506,17 +506,22 @@ body {
     }
 }
 
-#profile {
-    background-image: url(../img/profile.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: auto;
-    width: 70%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 10
+/*#profile {*/
+/*    background-image: url(../img/profile.png);*/
+/*    background-position: center center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: auto;*/
+/*    width: 70%;*/
+/*    height: 100%;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*    z-index: 10*/
+/*}*/
+
+#profile-pic {
+    width: 80%;
+    height: 80%
 }
 
 @media (max-width: 580px) {
