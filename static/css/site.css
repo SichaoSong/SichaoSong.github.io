@@ -344,6 +344,14 @@ a {
     content: "ResearchGate"
 }
 
+.icon.linkedin {
+    background-image: url(../img/icon-linkedin.png)
+}
+
+.icon.linkedin:after {
+    content: "LinkedIn"
+}
+
 .icon.email {
     background-image: url(../img/icon-email.png)
 }
