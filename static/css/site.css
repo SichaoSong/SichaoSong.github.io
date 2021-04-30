@@ -336,6 +336,14 @@ a {
     content: "Facebook"
 }
 
+.icon.researchgate {
+    background-image: url(../img/icon-researchgate.png)
+}
+
+.icon.researchgate:after {
+    content: "ResearchGate"
+}
+
 .icon.email {
     background-image: url(../img/icon-email.png)
 }
