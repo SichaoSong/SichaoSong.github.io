@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Video Annotation Tool</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+    <script src="https://kit.fontawesome.com/3c2260aebc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="menu_container" class="uk-width-1-1" uk-navbar>
+    <div id="menu" class="uk-navbar-left uk-text uk-text-large uk-text-bold">
+        <ul class="uk-navbar-nav">
+            <li>
+                <a href="#">File</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li><input type="file" id="open"></li>
+                        <li><a href="#">保存</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">Help</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li><a href="#">ショートカットキー一覧</a></li>
+                        <li><a href="#">使用方法</a></li>
+                        <li><a href="#">Version</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="video_area" class="uk-width-1-1" uk-grid>
+    <div id="video_container" class="uk-inline" uk-grid>
+        <div id="video" class="uk-position-center uk-inline">
+            <video controls playsinline uk-video="autoplay: false" class="uk-position-center" hidden="true"></video>
+            <i class="fab fa-youtube fa-3x uk-position-center"></i>
+        </div>
+        <div id="control_container" class="uk-flex uk-flex-center uk-position-bottom-center" uk-grid>
+            <a id="btn_backward10s" class="control-icon">
+                <i class="fas fa-undo fa-2x"></i>
+            </a>
+            <a id="btn_backward" class="control-icon">
+                <span class="uk-badge">1</span><i class="fas fa-backward fa-2x"></i>
+            </a>
+            <a id="btn_play" class="control-icon">
+                <i class="fas fa-play-circle fa-2x"></i>
+            </a>
+            <a id="btn_forward" class="control-icon">
+                <i class="fas fa-forward fa-2x"></i><span class="uk-badge">1</span>
+            </a>
+            <a id="btn_forward10s" class="control-icon">
+                <i class="fas fa-redo fa-2x"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<hr class="uk-divider-icon">
+<div id="counter_area" class="uk-width-1-1 uk-inline uk-flex uk-flex-left uk-grid-small" uk-grid>
+    <div id="counter_adder" class="uk-card uk-card-default uk-inline counter-container-add">
+        <a href="#counter_form" class="uk-position-center" onclick="addCounter();" uk-toggle>
+            <i class="fas fa-plus"></i>
+        </a>
+    </div>
+</div>
+<div id="counter_form" class="uk-flex-top" uk-modal="bg-close: false; esc-close: false;">
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+        <button class="uk-modal-close-outside" type="button" uk-close></button>
+        <h2 class="uk-modal-title">カウンター設定</h2>
+        <form class="uk-form-horizontal uk-margin-medium">
+            <div class="uk-margin">
+                <label class="uk-form-label" for="name_input">カウンター名</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input uk-form-danger name-input" id="name_input" type="text" placeholder="名前">
+                </div>
+            </div>
+            <div class="uk-margin">
+                <label class="uk-form-label">種類</label>
+                <div class="uk-form-controls">
+                    <input type="radio" id="type_sum_input" name="type_input" value="sum" checked>
+                    <label for="type_sum_input">Sum</label>
+                    <input type="radio" id="type_time_input" name="type_input" value="sum">
+                    <label for="type_time_input">Time</label>
+                    <input type="radio" id="type_label_input" name="type_input" value="sum">
+                    <label for="type_label_input">Label</label>
+                </div>
+            </div>
+            <div class="uk-margin">
+                <label class="uk-form-label" for="key_input">ショートカットキー</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input uk-text-center" id="key_input" placeholder="A" value="A"/>
+                </div>
+            </div>
+            <div class="uk-margin">
+                <label class="uk-form-label" for="color_input">ボタン色</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input uk-text-center" type="color" id="color_input" value="#FFFFFF">
+                </div>
+            </div>
+        </form>
+        <div class="uk-width-1-1 div-contains-buttons uk-inline">
+            <div class="uk-position-left">
+                <button id="counter_delete_btn" class="uk-button uk-button-danger" type="button">削除</button>
+            </div>
+            <div class="uk-position-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">キャンセル</button>
+                <button id="counter_save_btn" class="uk-button uk-button-primary" type="button">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="./static/js/videoCounterMain.js"></script>
+<script type="text/javascript" src="./static/js/videoCounterCounter.js"></script>
+<link href="./static/css/videoCounterStyle.css" rel="stylesheet" type="text/css">
+
+</body>
+</html>

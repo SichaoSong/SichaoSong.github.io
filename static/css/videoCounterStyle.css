@@ -1,0 +1,71 @@
+html, body {
+  height: 100%;
+}
+
+#counter_form {
+  width: 40%;
+}
+
+.div-contains-buttons {
+  height: 50px;
+}
+
+#menu_container {
+  margin-left: 20px;
+  z-index: 10;
+}
+
+#video_area {
+  width: 100%;
+  height: 50%;
+  margin: 0px;
+  padding: 0px;
+}
+
+#video_container {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+#video {
+  width: 50%;
+  height: 50%;
+  margin: 0px;
+  padding: 0px;
+}
+
+#control_container {
+  margin: 0px;
+  padding: 6px;
+  background-color: aliceblue;
+  border-radius: 25px;
+}
+
+.control-icon {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 0px;
+}
+
+#counter_area {
+  overflow: auto;
+}
+
+.counter-container-add {
+  width: 40px;
+  height: 40px;
+  margin-left: 40px;
+  padding: 0px;
+  border-radius: 50%;
+}
+
+.counter-container {
+  width: 120px;
+  height: 140px;
+  margin: 6px;
+}
+
