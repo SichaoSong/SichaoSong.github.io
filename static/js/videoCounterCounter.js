@@ -6,7 +6,7 @@ const btnCounterDelete = document.getElementById('counter_delete_btn')
 const counterList = {}
 const counterBaseTemplate = {
   'sum':
-    '<li>' +
+    '<li style="padding: 0px;">' +
     '  <div class="uk-button uk-button-default uk-inline counter-container">' +
     '    <div class="uk-text-small uk-text-bold counter-name" style="overflow: scroll; height: 20px;"></div>' +
     '    <div class="uk-label uk-label-default uk-position-bottom-left no-padding counter-type"></div>' +
@@ -17,7 +17,7 @@ const counterBaseTemplate = {
     '  </div' +
     '</li>',
   'time':
-    '<li>' +
+    '<li style="padding: 0px;>' +
     '  <div class="uk-button uk-button-default uk-inline counter-container">' +
     '    <div class="uk-text-small uk-text-bold counter-name" style="overflow: scroll; height: 20px;"></div>' +
     '    <div class="uk-label uk-label-warning uk-position-bottom-left no-padding counter-type"></div>' +
@@ -30,7 +30,7 @@ const counterBaseTemplate = {
     '  </div' +
     '</li>',
   'label':
-    '<li>' +
+    '<li style="padding: 0px;>' +
     '  <div class="uk-button uk-button-default uk-inline counter-container">' +
     '    <div class="uk-text-small uk-text-bold counter-name"  style="overflow: scroll; height: 20px;"></div>' +
     '    <div class="uk-label uk-label-danger uk-position-bottom-left no-padding counter-type"></div>' +
