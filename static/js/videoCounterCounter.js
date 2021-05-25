@@ -96,6 +96,13 @@ function editCounter (dom) {
     key = keyCharMap[e.key] ? keyCharMap[e.key] : e.key.toUpperCase()
     formCounter.querySelector('#key_input').value = key
   }
+  // update counter setting display before edit
+  formCounter.querySelector('#name_input').value = counter.name
+  counter.type === 'sum' ? formCounter.querySelector('#type_sum_input').checked = true :
+      counter.type === 'time' ? formCounter.querySelector('#type_time_input').checked = true  :
+        formCounter.querySelector('#type_label_input').checked = true
+  formCounter.querySelector('#key_input').value = counter.key
+  formCounter.querySelector('#color_input').value = counter.color
   btnCounterSave.onclick = ()=> {
     counter.name = formCounter.querySelector('#name_input').value
     counter.key = key
