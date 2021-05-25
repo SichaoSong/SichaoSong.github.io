@@ -14,10 +14,10 @@ const counterBaseTemplate = {
     '      <div class="uk-text uk-text-large counter-sum">0</div>' +
     '    </div>' +
     '    <a href="#" class="uk-icon-link uk-position-top-right" uk-icon="pencil" onclick="editCounter(this);event.stopPropagation();"></a>' +
-    '  </div' +
+    '  </div>' +
     '</li>',
   'time':
-    '<li style="padding: 0px;>' +
+    '<li style="padding: 0px;">' +
     '  <div class="uk-button uk-button-default uk-inline counter-container">' +
     '    <div class="uk-text-small uk-text-bold counter-name" style="overflow: scroll; height: 20px;"></div>' +
     '    <div class="uk-label uk-label-warning uk-position-bottom-left no-padding counter-type"></div>' +
@@ -27,10 +27,10 @@ const counterBaseTemplate = {
     '      <div class="uk-text uk-text-large uk-text-emphasis uk-text-primary counter-time-duration">0</div>' +
     '    </div>' +
     '    <a href="#" class="uk-icon-link uk-position-top-right" uk-icon="pencil" onclick="editCounter(this);event.stopPropagation();"></a>' +
-    '  </div' +
+    '  </div>' +
     '</li>',
   'label':
-    '<li style="padding: 0px;>' +
+    '<li style="padding: 0px;">' +
     '  <div class="uk-button uk-button-default uk-inline counter-container">' +
     '    <div class="uk-text-small uk-text-bold counter-name"  style="overflow: scroll; height: 20px;"></div>' +
     '    <div class="uk-label uk-label-danger uk-position-bottom-left no-padding counter-type"></div>' +
@@ -38,7 +38,7 @@ const counterBaseTemplate = {
     '      <div class="uk-text uk-text-large counter-label">-</div>' +
     '    </div>' +
     '    <a href="#" class="uk-icon-link uk-position-top-right" uk-icon="pencil" onclick="editCounter(this);event.stopPropagation();"></a>' +
-    '  </div' +
+    '  </div>' +
     '</li>',
 }
 
